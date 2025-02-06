@@ -122,7 +122,7 @@
 
 @media screen and (max-width: 768px) {
   .heading div {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .description div, .note div {
@@ -136,10 +136,12 @@
   }
 
   .password-container input {
+    font-size: 1.7rem;
     width: 80%;
   }
 
   .password-container button {
+    font-size: 1.5rem;
     width: 80%;
     margin-top: 10px;
   }
@@ -189,17 +191,17 @@
   }
 
   .description div, .note div {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 95%;
   }
 
   .password-container input {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     height: 2.5rem;
   }
 
   .password-container button {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     height: 2.5rem;
   }
 
