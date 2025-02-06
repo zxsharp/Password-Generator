@@ -126,7 +126,7 @@ const Description = memo(() => {
 })
 
 const Note = memo(() => {
-  return <div>Note - Once you refresh the page or click Re-Generate, the password will be completely lost.</div>
+  return <div>Note - Once you refresh the page or click Re-generate, the password will be completely lost.</div>
 })
 
 function DisplayPassword({generatedPassword}) {
