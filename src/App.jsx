@@ -56,7 +56,7 @@ function App() {
       <DisplayPassword generatedPassword={generatedPassword}/>
       <CopyButton generatedPassword={generatedPassword}/>
       <button onClick={() => setGeneratedPassword(password(passwordLength, smallCheck, capitalCheck, numberCheck, specialCheck))}>
-        Re-Generate🔄
+        Re-generate🔄
       </button>
     </div>
 
@@ -126,7 +126,7 @@ const Description = memo(() => {
 })
 
 const Note = memo(() => {
-  return <div>Note - Once you refresh the page or click Re-generate, the password will be completely lost.</div>
+  return <div>Note - Once you refresh the page or generate a new password, the previous password will be completely lost.</div>
 })
 
 function DisplayPassword({generatedPassword}) {
