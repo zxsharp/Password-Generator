@@ -118,7 +118,6 @@ function App() {
 // components
 
 const Heading = memo(() => {
-  console.log("rendered heading")
   return<div>Generate Strong Passwords</div>
 })
 
@@ -131,7 +130,6 @@ const Note = memo(() => {
 })
 
 function DisplayPassword({generatedPassword}) {
-  console.log("rendered displayPassword")
   return <>
     <input type="text" value={generatedPassword} readOnly/>
   </>
