@@ -32,7 +32,9 @@ export function password(length, smallCheck, capitalCheck, numberCheck, specialC
     let psswd = "";
 
     for(let i=0; i<atLeastOne.length; i++){
-        psswd += atLeastOne[i][Math.floor(Math.random() * atLeastOne.length)];
+        let randomIndex = Math.floor(Math.random() * atLeastOne[i].length);
+        console.log(randomIndex);
+        psswd += atLeastOne[i][randomIndex];
     }
     
     const remainingLength = length - atLeastOne.length;
