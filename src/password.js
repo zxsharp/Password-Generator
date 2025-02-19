@@ -33,7 +33,6 @@ export function password(length, smallCheck, capitalCheck, numberCheck, specialC
 
     for(let i=0; i<atLeastOne.length; i++){
         let randomIndex = Math.floor(Math.random() * atLeastOne[i].length);
-        console.log(randomIndex);
         psswd += atLeastOne[i][randomIndex];
     }
     
