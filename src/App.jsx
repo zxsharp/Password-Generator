@@ -1,4 +1,4 @@
-import { useState, useMemo, memo } from 'react'
+import { useState, useEffect, useMemo, memo } from 'react'
 import './App.css'
 import {password} from './password.js'
 
@@ -33,7 +33,7 @@ function App() {
   }
 
   // update password whenever passwordLength changes
-  useMemo(() => {
+  useEffect(() => {
     setGeneratedPassword(password(passwordLength, smallCheck, capitalCheck, numberCheck, specialCheck));
   }, [passwordLength, smallCheck, capitalCheck, numberCheck, specialCheck]);
 
@@ -139,7 +139,7 @@ function CopyButton({generatedPassword}){
   const [copyState, setCopyState] = useState("Copy");
 
   // re renderes "Copy" when generatedPassword changes
-  useMemo(() => {
+  useEffect(() => {
     setCopyState("Copy");
   }, [generatedPassword]);
 
